@@ -11,11 +11,17 @@
   <style type="text/css" id="gwd-text-style">
     p {
       margin: 0px;
+      z-index: 1;
     }
     h1 {
       margin: 0px;
+      font-family: "Fredoka One";
+      font-weight: normal;
+      font-size: 48px;
+      color: #00bebc;
     }
     h2 {
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0px;
     }
     h3 {
@@ -30,26 +36,140 @@
     }
 
     body {
-      background-color: transparent;
+      background-color: rgb(192, 17, 17);
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: preserve-3d;
     }
 
+    .topnav {
+      z-index: 1;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      
+  background-color: rgb(156, 156, 156);
+  overflow: hidden;
+}
+
+
+    .topnav a {
+      float: left;
+     
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family: "Fredoka One";
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #00bebc;;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #00bebc;;
+      color: white;
+    }
+    .slider{
+      height: 85%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    
     .row {
-    width: 100%;
-    margin: 0px auto;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      z-index: 1;
     }
+
     .block {
-        width: 600px;
-        border: 5px;
         display: inline-block;
-        position: absolute;
-        top: 85%;
+        width: 490px;
+        height: 100px;
+        text-align: center;
     }
-    .palikka {
-      height: 300px;
-      width: 500px;
+    .ingressitekstit{
+      width: 200px;
+      text-align: center;
+      font-family: "Fredoka One";
+      font-weight: normal;
+      font-size: 30px;
+      position: relative;
+      top: -280%;
+      text-align: center;
+      color: #00bebc;
+
+    }
+    .selitetekstit{
+      width: 200px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 20px;
+      position: relative;
+      top: -250%;
+      text-align: center;
+    }
+    .taustakivet{
+       position: relative;
+      top: -20%;
+     
+    }
+    .etuikoni { 
+      transform-origin: 50% 50% 0px;
+      width: 135px;
+      height: 137px;
+      text-align: center;
+      vertical-align: 0%;
+      position: relative;
+      top: -240%;
+      left: -5%;
+      
+    }
+
+    .maincontentrow{
+      padding-top: -90px;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      
+    }
+
+    .maincontent{
+   
+        display: inline-block;
+        width: 700px;
+        height: 600px;
+        text-align: center;
+        vertical-align: top;
+    }
+    .maintext{
+      padding: 30px;
+      margin: 10%;
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .maincontentimage{
       display: inline-block;
+        width: 800px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .footer{
+      padding-top: 50px;
+      display: inline-block;
+      background-color: #cdc5efff;
+      width: 100%;
+      height: 30%;
+      text-align: center;
+     
     }
 
     .gwd-div-2b06 {
@@ -76,9 +196,9 @@
       transform-origin: 50% 50% 0px;
       display: block;
       left: 0px;
-      bottom: -10%;
+      bottom: -5%;
       transform-style: preserve-3d;
-      height: 70%;
+      height: 60%;
       transform: translate3d(0px, 287px, 0px);
     }
     .gwd-img-1tj2 {
@@ -109,7 +229,7 @@
     }
     .gwd-div-19nm {
       position: absolute;
-      top: 42.1%;
+      top: 52.1%;
       left: 50%;
       z-index: 1;
       
@@ -272,6 +392,7 @@
       transform-origin: 50% 50% 0px;
       width: 562px;
       font-family: "DM Serif Display";
+      font-style: bold;
     }
     .gwd-div-s7ng {
       position: absolute;
@@ -363,16 +484,8 @@
       left: 0px;
       top: 18px;
     }
-    .gwd-img-1xxy {
-      position: absolute;
-      transform-origin: 50% 50% 0px;
-      width: 135px;
-      height: 137px;
-      left: 123px;
-      top: -28px;
-    }
+  
     .gwd-img-1osz {
-      position: absolute;
       transform-origin: 50% 50% 0px;
       width: 139px;
       height: 124px;
@@ -448,49 +561,106 @@
 </head>
 
 <body class="htmlNoPages">
-  <div class="gwd-div-2b06" id="TopSlider">
-
-    <div class="gwd-div-19nm" id="GetStartedHolder">
-      <svg data-gwd-shape="rectangle" class="gwd-rect-1dtl" id="GetStartedBg"></svg>
-      <div class="gwd-div-1rq4"><span class="gwd-span-10w8 gwd-span-1l4y" id="GetStartedText">GET STARTED!</span></div>
-      <gwd-gesture id="GetStartedHover" class="gwd-gesture-1vpw"></gwd-gesture>
-      <div class="gwd-div-1dn6">&nbsp;You prescribe exercises, students play games</div>
-      <div class="gwd-div-s7ng">Something here?</div>
-    </div>
-
-    <img src="assets/oikAla.png" class="gwd-img-1g7i gwd-gen-14jzgwdanimation">
-    <img src="assets/vasenAla.png" class="gwd-img-lb16 gwd-gen-17gigwdanimation">
-    <img src="assets/vasenAlaPuu.png" class="gwd-img-onkr gwd-gen-njmvgwdanimation">
-    <img src="assets/oikeaAlaPuu.png" class="gwd-img-1rky gwd-gen-ss2xgwdanimation">
-    <img src="assets/yla.png" class="gwd-img-1tj2 gwd-gen-eypogwdanimation">
-    <img src="assets/Lorugames-logo-final-versio2 (1) (2).svg" class="gwd-img-y4by">
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Play</a>
+    <a href="#contact">Sign in</a>
+    <a href="#about">About</a>
   </div>
+  <div class="slider">
+    <div class="gwd-div-2b06" id="TopSlider">
+      <div class="gwd-div-19nm" id="GetStartedHolder">
+        <svg data-gwd-shape="rectangle" class="gwd-rect-1dtl" id="GetStartedBg"></svg>
+        <div class="gwd-div-1rq4"><span class="gwd-span-10w8 gwd-span-1l4y" id="GetStartedText">GET STARTED!</span></div>
+        <gwd-gesture id="GetStartedHover" class="gwd-gesture-1vpw"></gwd-gesture>
+        <div class="gwd-div-1dn6">&nbsp;You prescribe exercises, students play games</div>
+      </div>
+  
+      <img src="assets/oikAla.png" class="gwd-img-1g7i gwd-gen-14jzgwdanimation">
+      <img src="assets/vasenAla.png" class="gwd-img-lb16 gwd-gen-17gigwdanimation">
+      <img src="assets/vasenAlaPuu.png" class="gwd-img-onkr gwd-gen-njmvgwdanimation">
+      <img src="assets/oikeaAlaPuu.png" class="gwd-img-1rky gwd-gen-ss2xgwdanimation">
+      <img src="assets/yla.png" class="gwd-img-1tj2 gwd-gen-eypogwdanimation">
+      <img src="assets/Lorugames-logo-final-versio2 (1) (2).svg" class="gwd-img-y4by">
+  </div>
+  </div>
+
 
   <div class="row">
     <!-- <svg data-gwd-shape="rectangle"  data-gwd-tl-hidden=""></svg> -->
    
     <div class="block" id="vasenIngressi">
-      <img src="assets/frontRocks1.svg" class="gwd-img-ppxq gwd-img-1q98">
-      <div class="gwd-div-19ih">
-        <img src="assets/lAnything.svg" class="gwd-img-1xxy"><span class="gwd-span-10w8 gwd-span-1urp gwd-span-1f2w gwd-span-1v27"><span class="gwd-span-1j67">Teach anything</span>!</span>
-      </div>
+        <img src="assets/frontRocks1.svg" class="taustakivet">
+        <img src="assets/Login.svg" class="etuikoni">
+        <span >
+          <span class=" ingressitekstit" >
+            <br>
+            It's free
+          </span>
+          <br>
+          <span class="selitetekstit">Learning reports as paid feature.</span>
+        </span>
     </div>
-    
-    <div class="block" id="keskiIngressi">
-      <img src="assets/frontRocks1.svg" class="gwd-img-ppxq gwd-img-9gv7">
-      <img src="assets/dataPrivacy.svg" class="gwd-img-1osz">
-      <div class="gwd-div-19ih gwd-div-sm0s"><span class="gwd-span-10w8 gwd-span-1urp gwd-span-1f2w gwd-span-qkcm">Coppa, Ferpa and GRPD         compliant</span></div>
-    </div>
-    
-     <div class="block" id="oikeaIngressi">
-      <img src="assets/frontRocks1.svg" >
-      <img src="assets/Login.svg" class="gwd-img-1cye">
-      <span class="gwd-span-10w8 gwd-span-1urp gwd-span-1f2w gwd-span-dj36">From Teachers To Teachers!</span>
-    </div>
-    
-    
+
+    <div class="block" id="vasenIngressi">
+      <img src="assets/frontRocks1.svg" class="taustakivet">
+      <img src="assets/lAnything.svg" class="etuikoni">
+      <span class=" ingressitekstit">
+        <span >
+          <br>
+          From Teachers <br> to Teachers
+        </span>!
+      </span>
+      <br>
+      <span class="selitetekstit">Adaptive learning, teacher created question sets and many more features desinged by teachers.</span>
   </div>
- 
+  <div class="block" id="vasenIngressi">
+    <img src="assets/frontRocks1.svg" class="taustakivet">
+    <img src="assets/dataPrivacy.svg" class="etuikoni">
+    <span class=" ingressitekstit">
+      <span >
+        <br>
+        COPPA, FERPA and <br> GPDR compliant
+      </span>
+    </span>
+    <br>
+    <span class="selitetekstit">Safe to use for schools around the world.</span>
+  </div>
+</div>
+   
+<div class="maincontentrow"> 
+    <div class="maincontent"> 
+     <h1> Getting started is easy and takes only 5 minutes!</h1>
+     <span class="maintext"> 
+<br>
+      1.  Sign up and create your first question set. <br>
+
+      2. Create a class and invite your students <br>
+      
+      3. Let students start playing and track their learning!
+      <br>
+     </span>
+
+
+     <h1>  Join the Global Loru Games Ambassador Program!</h1>
+   
+    </div>
+    <div class="maincontentimage "> 
+      <img src="assets/Lorugames-somekuva-vuohi.jpg" alt="" style="width: 70%;">
+      <!-- <iframe src="https://lorugames.com/games-demo/RoboGame" style=" height: 100%; width: 100%">
+      </iframe> -->
+    </div>
+    
+</div>
+<!-- korjaa tämä footerin sijainti -->
+
+
+<div class="footer"> 
+  <h1 style="color: white;">Power of games in learning</h1>
+  <img src="assets/Lorugames-logo-final-versio2 (1) (2).svg" style="height: 50%;">
+
+</div>
+
 </body>
 
 </html>
