@@ -14,7 +14,7 @@
       z-index: 1;
     }
     h1 {
-      margin: 0px;
+      margin: 5%;
       font-family: "Fredoka One";
       font-weight: normal;
       font-size: 48px;
@@ -27,6 +27,9 @@
     h3 {
       margin: 0px;
     }
+    a{
+      color: #00bebc;
+    }
   </style>
   <style type="text/css">
     html, body {
@@ -36,7 +39,7 @@
     }
 
     body {
-      background-color: rgb(192, 17, 17);
+      background-color: white;
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: preserve-3d;
     }
@@ -85,23 +88,30 @@
       width: 100%;
       background-color: white;
       text-align: center;
-      z-index: 1;
+      z-index: 10;
+      position: relative;
+      margin-top: -2%;
+      
     }
 
     .block {
         display: inline-block;
-        width: 490px;
-        height: 100px;
+        width: 430px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 20%;
         text-align: center;
+        margin-top: -5%;
+        margin-bottom: 5%;
     }
     .ingressitekstit{
-      width: 200px;
+      margin-top: -10%;
       text-align: center;
       font-family: "Fredoka One";
       font-weight: normal;
       font-size: 30px;
       position: relative;
-      top: -280%;
+     
       text-align: center;
       color: #00bebc;
 
@@ -118,7 +128,9 @@
     }
     .taustakivet{
        position: relative;
-      top: -20%;
+ 
+      width: 90%;
+     
      
     }
     .etuikoni { 
@@ -128,38 +140,47 @@
       text-align: center;
       vertical-align: 0%;
       position: relative;
-      top: -240%;
-      left: -5%;
+      margin-top: -30%;
+   
       
     }
 
     .maincontentrow{
-      padding-top: -90px;
-      width: 100%;
+      z-index: 10;
       background-color: white;
+      padding-top: 0px;
+      width: 100%;
       text-align: center;
       
     }
 
     .maincontent{
-   
+        margin: 5%;
         display: inline-block;
-        width: 700px;
-        height: 600px;
+        width: 70%;
         text-align: center;
         vertical-align: top;
     }
     .maintext{
-      padding: 30px;
-      margin: 10%;
+      margin-bottom: 5%;
       font-size: 22px;
       font-family: Arial, Helvetica, sans-serif;
     }
     .maincontentimage{
-      display: inline-block;
-        width: 800px;
-        height: 100px;
+        display: inline-block;
+        width: 80%;
+        height: 80%;
+        margin-top: 0%;
+        margin-bottom: 10%;
         text-align: center;
+        position: relative;
+    }
+    .ambassadorlink{
+      
+      margin-bottom: 10%;
+      position: relative;
+      width: 100%;
+      height: fit-content;
     }
 
     .footer{
@@ -247,6 +268,7 @@
     }
     .gwd-rect-1dtl {
       border-color: rgb(248, 253, 253);
+      background-color:  rgb(46, 213, 213);
       border-radius: 27px;
       border-style: solid;
       border-width: 9px;
@@ -258,7 +280,7 @@
       left: -164px;
       top: -16px;
       background-image: none;
-      background-color: transparent;
+
     }
     .gwd-img-y4by {
       display: block;
@@ -291,6 +313,7 @@
     }
     .gwd-div-1rq4 {
       color: rgb(46, 213, 213);
+      background-color: rgb(46, 213, 213);
       height: 0%;
       left: 50%;
       position: absolute;
@@ -386,6 +409,7 @@
       top: -164px;
       text-align: center;
       font-size: 38px;
+      background:  #00bebc;
       color: rgb(234, 243, 243);
       left: -287px;
       height: 125px;
@@ -562,19 +586,28 @@
 
 <body class="htmlNoPages">
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">Play</a>
-    <a href="#contact">Sign in</a>
-    <a href="#about">About</a>
+    <a class="active" href="https://www.lorugames.com/games">Home</a>
+    <a href="https://www.lorugames.com/games">Play</a>
+    <a href="https://www.lorugames.com/games">Sign in</a>
+    <a href="https://www.lorugames.com/games">About</a>
   </div>
+
   <div class="slider">
     <div class="gwd-div-2b06" id="TopSlider">
-      <div class="gwd-div-19nm" id="GetStartedHolder">
-        <svg data-gwd-shape="rectangle" class="gwd-rect-1dtl" id="GetStartedBg"></svg>
-        <div class="gwd-div-1rq4"><span class="gwd-span-10w8 gwd-span-1l4y" id="GetStartedText">GET STARTED!</span></div>
-        <gwd-gesture id="GetStartedHover" class="gwd-gesture-1vpw"></gwd-gesture>
-        <div class="gwd-div-1dn6">&nbsp;You prescribe exercises, students play games</div>
-      </div>
+      <a href="https://www.lorugames.com/portal">
+        <div class="gwd-div-19nm" id="GetStartedHolder">
+          
+          <svg data-gwd-shape="rectangle" class="gwd-rect-1dtl" id="GetStartedBg"></svg>
+          <div class="gwd-div-1rq4">
+            
+            <span class="gwd-span-10w8 gwd-span-1l4y" id="GetStartedText" >GET STARTED!</span> 
+          
+          </div>
+        
+          <gwd-gesture id="GetStartedHover" class="gwd-gesture-1vpw"></gwd-gesture>
+          <div class="gwd-div-1dn6">&nbsp;You prescribe exercises, students play games</div>
+        </div>
+      </a>
   
       <img src="assets/oikAla.png" class="gwd-img-1g7i gwd-gen-14jzgwdanimation">
       <img src="assets/vasenAla.png" class="gwd-img-lb16 gwd-gen-17gigwdanimation">
@@ -631,18 +664,23 @@
 <div class="maincontentrow"> 
     <div class="maincontent"> 
      <h1> Getting started is easy and takes only 5 minutes!</h1>
-     <span class="maintext"> 
+     <div class="maintext"> 
 <br>
-      1.  Sign up and create your first question set. <br>
+<span>  1.  Sign up and create your first question set.</span> <br>
+<span>2. Create a class and invite your students</span><br>
+<span>3. Let students start playing and track their learning!</span>
 
-      2. Create a class and invite your students <br>
+</div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFBH7pqTMh5AUGQorJ12zOsQt24kx0_tFzjQTjH4idyW2zFQ/viewform?usp=send_form">
+        <div class="ambassadorlink" > 
+
+          <span> <h1>  Join the Global Loru Games Ambassador Program!</h1></span>
+  
+        </div>
+      </a>
       
-      3. Let students start playing and track their learning!
-      <br>
-     </span>
 
-
-     <h1>  Join the Global Loru Games Ambassador Program!</h1>
+    
    
     </div>
     <div class="maincontentimage "> 
