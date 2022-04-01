@@ -13,13 +13,13 @@
    version="1.1"
    xml:space="preserve"
    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-   id="svg840"
-   sodipodi:docname="frontRocks1.svg"
+   id="svg5672"
+   sodipodi:docname="frontRocks3.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
-   id="metadata846"><rdf:RDF><cc:Work
+   id="metadata5678"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs844" /><sodipodi:namedview
+   id="defs5676" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -30,20 +30,20 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1920"
    inkscape:window-height="1017"
-   id="namedview842"
+   id="namedview5674"
    showgrid="false"
    inkscape:pagecheckerboard="true"
    inkscape:zoom="1.0040916"
-   inkscape:cx="560.41223"
-   inkscape:cy="124.66333"
+   inkscape:cx="414.51334"
+   inkscape:cy="159.81622"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg840" />
+   inkscape:current-layer="svg5672" />
     <path
-   d="m 140.63174,269.55597 c 2.60782,-55.1822 41.60017,-48.15026 41.60017,-48.15026 0,0 5.75177,-63.79749 56.23649,-59.99273 4.50216,0.3405 16.18991,1.92945 32.69601,4.36178 11.48292,-43.64743 42.5939,-74.969083 79.13085,-74.969083 36.75002,0 68.01084,31.688343 79.3288,75.730383 14.88532,-18.05125 34.63573,-29.05696 56.29285,-29.05696 36.30049,0 67.24651,30.92006 78.90539,74.12397 144.81187,36.79574 147.83798,40.45417 187.76334,66.25316 l 47.41536,2.86125 V 399.117 H -1.193 l 0.99592505,-126.86489 45.01370195,4.97963 24.920804,-12.79237 z"
+   d="m 178.62396,184.89033 c 0,0 -7.0919,-76.00374 54.54654,-75.54068 61.63842,0.46306 316.27155,0 316.27155,0 0,0 50.9341,-17.80633 58.00209,42.27357 39.16817,67.80062 -16.21823,67.86563 107.53122,48.34449 L 799.00507,286.69303 800.001,399.117 H -1.193 l -0.995925,-125.371 63.306264,-85.05652 85.322171,33.32569 c 25.51271,-12.20595 22.29028,26.18162 32.18445,-37.12484 z"
    style="fill:#ffffff"
-   id="path838"
+   id="path5670"
    inkscape:connector-curvature="0"
-   sodipodi:nodetypes="ccccscsccccccccc" />
+   sodipodi:nodetypes="cscccccccccc" />
 </svg>

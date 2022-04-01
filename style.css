@@ -1,0 +1,655 @@
+
+  p {
+    margin: 0px;
+    z-index: 1;
+    font-size: large;
+  }
+  h1 {
+    margin: 3%;
+    font-family: "Fredoka One";
+    font-weight: normal;
+    font-size: 48px;
+    color: #00bebc;
+  }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+  }
+  h3 {
+    margin: 0px;
+  }
+  a {
+    color: #00bebc;
+  }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+
+}
+
+.topnav {
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: rgb(156, 156, 156);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Fredoka One";
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #00bebc;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #00bebc;
+  color: white;
+}
+
+.slider {
+  height: 85%;
+  width: 100%;
+  z-index: -1;
+}
+
+.row {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  margin-top: -2%;
+  margin-bottom: -5%;
+}
+
+.block {
+  display: inline-block;
+  width: 430px;
+  margin-left: -1%;
+  height: 20%;
+  text-align: center;
+  margin-top: -5%;
+  margin-bottom: 9%;
+  vertical-align: top;
+}
+.ingressitekstit {
+  margin-top: -10%;
+  text-align: center;
+  font-family: "Fredoka One";
+  font-weight: normal;
+  font-size: 30px;
+  position: relative;
+
+  text-align: center;
+  color: #00bebc;
+}
+.selitetekstit {
+  width: 200px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: x-large;
+  position: relative;
+  top: -255%;
+  text-align: center;
+}
+.taustakivet {
+  position: relative;
+  width: 100%;
+  margin-top: -5%;
+}
+.etuikoni {
+  transform-origin: 50% 50% 0px;
+  width: 300px;
+  height: 280px;
+  text-align: center;
+  vertical-align: 0%;
+  position: relative;
+  margin-top: -39%;
+  
+}
+
+.maincontentrow {
+  z-index: 3;
+  background-color: white;
+  padding-top: 0px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.maincontent {
+  
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+  
+}
+.maintext {
+padding-bottom: 2%;
+  padding-top: 2%;
+  width: 100%;
+  font-size: 4vh;
+  color: rgb(234, 243, 243);
+  font-family: "Fredoka One";
+  background-color:#00bebc;
+
+}
+.maincontentimage {
+  display: inline-block;
+  width: 70%;
+  height: 80%;
+  margin-top: -5%;
+  margin-bottom: 10%;
+  text-align: center;
+  position: relative;
+}
+.ambassadorlink {
+  margin-bottom: 10%;
+  margin-top: 3%;
+  font-size: 4vh;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Fredoka One";
+  background-color:#ffffff;
+}
+
+.footer {
+  padding-top: 50px;
+  display: inline-block;
+  background-color: #cdc5efff;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.someicons{
+  height: 35px;
+  margin: 3px;
+  
+}
+
+.cookie-banner {
+  position: fixed;
+  z-index: 10;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  
+}
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.gwd-div-2b06 {
+  position: absolute;
+  background-image: none;
+  background-color: rgb(0, 190, 188);
+  height: 85%;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+}
+/* oikeaala */
+.gwd-img-1g7i {
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  bottom: 0px;
+  display: block;
+  right: 0%;
+  transform-style: preserve-3d;
+  width: 80%;
+  transform: translate3d(0px, 278px, 0px);
+}
+/* vasen ala */
+.gwd-img-lb16 {
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  display: block;
+  left: 0px;
+  bottom: -5%;
+  transform-style: preserve-3d;
+  width: 65%;
+  transform: translate3d(0px, 287px, 0px);
+}
+.gwd-img-1tj2 {
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  top: 0%;
+  width: 100%;
+  left: 0px;
+  transform-style: preserve-3d;
+  transform: translate3d(0px, -603px, 0px);
+}
+.gwd-img-onkr {
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  left: 10%;
+  bottom: 0%;
+  width: 20%;
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 350px, 0px);
+}
+.gwd-img-1rky {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 30%;
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 400px, 0px);
+}
+/* otsikko ja nappi alue */
+.gwd-div-19nm {
+  position: absolute;
+  top: 52.1%;
+  left: 50%;
+  background-color: rgb(46, 213, 213);
+  z-index: 1;
+}
+
+/* otsikkolaatikko */
+.gwd-gesture-1vpw {
+  position: absolute;
+  top: -16px;
+
+  transform-origin: 50% 50% 0px;
+  background-image: none;
+}
+
+/* otsikko */
+.gwd-div-1dn6 {
+  position: absolute;
+  top: -17vh;
+  text-align: center;
+  font-size: 3.8vh;
+  width: 70vw;
+  left: -35vw;
+  transform-origin: 0% 50% 0px;
+
+  color: rgb(234, 243, 243);
+  font-family: "Fredoka One";
+ 
+}
+
+/* nappi teksti */
+.gwd-span-10w8 {
+  color: rgb(248, 250, 250);
+
+  font-family: "Fredoka One";
+  font-size: 28px;
+  height: 85.5px;
+  position: absolute;
+  width: 299px;
+  left: -145px;
+  margin-top: 40px;
+}
+/* nappi */
+.gwd-rect-1dtl {
+  border-color: rgb(248, 253, 253);
+  background-color: #cdc5efff;
+  border-radius: 27px;
+  border-style: solid;
+  border-width: 9px;
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  position: absolute;
+  width: 258px;
+  left: -124px;
+  top: 10px;
+  background-image: none;
+}
+.gwd-img-y4by {
+  display: block;
+  height: 92px;
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  width: 137px;
+  left: 5%;
+  top: 5%;
+}
+.gwd-div-1ykc {
+  background-image: none;
+  background-color: transparent;
+  top: 84%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.gwd-div-1rq4 {
+  color: rgb(46, 213, 213);
+  background-color: rgb(46, 213, 213);
+  height: 0%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 0%;
+}
+.gwd-span-1l4y {
+  text-align: center;
+  top: 0px;
+}
+
+/* iframe popup */
+a.popup-link {
+  z-index: 2;
+  padding: 17px 0;
+  text-align: center;
+  margin: 0% auto;
+  position: relative;
+  width: 420px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cdc5efff;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 0 rgb(135, 130, 158);
+  display: block;
+  font-family: "Fredoka One";
+  font-size: xx-large;
+}
+a.popup-link:hover {
+  background-color: rgb(135, 130, 158);
+  box-shadow: 3px 3px 0 0 #cdc5efff;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 0.5s;
+}
+#popup {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -50px;
+}
+#popup:target {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 99999999999;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media (min-width: 768px) {
+  .popup-container {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .popup-container {
+    width: 100%;
+  }
+}
+.popup-container {
+  position: relative;
+  margin: 7% auto;
+  padding: 30px 50px;
+  background-color: rgb(46, 213, 213);
+  color: #fff;
+  border-radius: 25px;
+}
+a.popup-close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #fff;
+  padding: 7px 10px;
+  margin: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 1;
+  color: rgb(46, 213, 213);;
+  font-family: "Fredoka One";
+}
+
+@keyframes gwd-gen-eypogwdanimation_gwd-keyframes {
+  0% {
+    transform: translate3d(0px, -603px, 0px);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+  }
+}
+#TopSlider .gwd-gen-eypogwdanimation {
+  animation: 2s linear 0s 1 normal forwards running
+    gwd-gen-eypogwdanimation_gwd-keyframes;
+}
+@keyframes gwd-gen-ss2xgwdanimation_gwd-keyframes {
+  0% {
+    transform: translate3d(0px, 400px, 0px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+  }
+}
+#TopSlider .gwd-gen-ss2xgwdanimation {
+  animation: 2s linear 0s 1 normal forwards running
+    gwd-gen-ss2xgwdanimation_gwd-keyframes;
+}
+@keyframes gwd-gen-njmvgwdanimation_gwd-keyframes {
+  0% {
+    transform: translate3d(0px, 350px, 0px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+  }
+}
+#TopSlider .gwd-gen-njmvgwdanimation {
+  animation: 2s linear 0s 1 normal forwards running
+    gwd-gen-njmvgwdanimation_gwd-keyframes;
+}
+@keyframes gwd-gen-17gigwdanimation_gwd-keyframes {
+  0% {
+    transform: translate3d(0px, 287px, 0px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+  }
+}
+#TopSlider .gwd-gen-17gigwdanimation {
+  animation: 2s linear 0s 1 normal forwards running
+    gwd-gen-17gigwdanimation_gwd-keyframes;
+}
+@keyframes gwd-gen-14jzgwdanimation_gwd-keyframes {
+  0% {
+    transform: translate3d(0px, 278px, 0px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+  }
+}
+#TopSlider .gwd-gen-14jzgwdanimation {
+  animation: 2s linear 0s 1 normal forwards running
+    gwd-gen-14jzgwdanimation_gwd-keyframes;
+}
+.gwd-rect-1swd {
+  border-style: solid;
+  box-sizing: border-box;
+  display: block;
+  left: 0%;
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  width: 100%;
+  border-width: 0px;
+  background-image: none;
+  background-color: rgb(255, 255, 255);
+  height: 97.78%;
+  top: 0%;
+}
+
+.gwd-div-s7ng {
+  position: absolute;
+  left: -243px;
+  top: 127px;
+  width: 473.333px;
+  height: 74.6667px;
+  font-size: 38px;
+  text-align: center;
+  color: rgb(234, 243, 243);
+  font-family: "Arial";
+  font-style: bold;
+}
+.gwd-img-xk9p {
+  position: absolute;
+  left: 21.3333px;
+  top: 884.351px;
+  width: 1920px;
+  height: 500px;
+}
+.gwd-span-1urp {
+  color: rgb(47, 179, 179);
+  font-size: 33px;
+  height: 17.98%;
+  left: 5.86%;
+  text-align: center;
+  top: 13.91%;
+  transform: matrix(0.994324, 0.10639, -0.10639, 0.994324, 93, -14);
+  transform-style: preserve-3d;
+  width: 24.29%;
+}
+.gwd-img-ppxq {
+  position: absolute;
+  left: 0px;
+  width: 398px;
+  height: 184px;
+  transform-origin: 50% 50% 0px;
+  top: 0px;
+}
+.gwd-div-1qag {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  vertical-align: top;
+  white-space: nowrap;
+  padding: 10px;
+  width: 700px;
+}
+.gwd-div-19ih {
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+.gwd-div-9vvx {
+  top: -5.03%;
+  overflow: visible;
+}
+.gwd-div-83po {
+  top: 0%;
+  border-style: none;
+  overflow: visible;
+}
+.gwd-img-yszj {
+  top: -24px;
+}
+.gwd-img-9gv7 {
+  transform-style: preserve-3d;
+  transform: translate3d(-18px, -24px, 0px) rotateZ(-16.3392deg);
+}
+.gwd-img-1q98 {
+  transform-style: preserve-3d;
+  transform: translate3d(34px, -18px, 0px) rotateZ(22.4078deg);
+}
+.gwd-span-1v27 {
+  width: 200px;
+  font-family: "Fredoka One";
+  font-weight: normal;
+  font-size: 24px;
+  transform: translate3d(-20px, 12px, 0px) rotateZ(-33.6652deg);
+}
+.gwd-span-u7gl {
+  font-weight: bold;
+}
+.gwd-span-1j67 {
+  font-weight: bold;
+}
+.gwd-div-1bno {
+  left: 0px;
+  top: 18px;
+}
+
+.gwd-img-1osz {
+  transform-origin: 50% 50% 0px;
+  width: 139px;
+  height: 124px;
+  left: 207px;
+  top: -15px;
+}
+.gwd-span-qkcm {
+  font-size: 22px;
+  transform: translate3d(94px, 5px, 0px) rotateZ(6.10726deg);
+}
+.gwd-div-sm0s {
+  left: -4.81%;
+}
+.gwd-img-1cye {
+  position: absolute;
+  transform-origin: 50% 50% 0px;
+  width: 179px;
+  height: 114px;
+  left: 199px;
+  top: 23px;
+}
+.gwd-div-1prc {
+  left: -6.56%;
+}
+.gwd-span-dj36 {
+  transform: translate3d(74px, 0px, 0px) rotateZ(6.10726deg);
+}
+.gwd-div-wzw1 {
+  overflow: visible;
+}
