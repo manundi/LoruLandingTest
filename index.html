@@ -154,40 +154,55 @@
 
     <div class="slider">
       <div class="gwd-div-2b06" id="TopSlider">
-        <a href="https://www.lorugames.com/portal" target="_parent">
-          <div class="gwd-div-19nm" id="GetStartedHolder">
-            <svg
+        <div class="Header">
+
+         
+
+            
+
+            <!-- <div class="opeNappi">
+              <svg 
               data-gwd-shape="rectangle"
               class="gwd-rect-1dtl"
               id="GetStartedBg"
-            ></svg>
-            <div class="gwd-div-1rq4">
-              <span class="gwd-span-10w8 gwd-span-1l4y" id="GetStartedText"> 
+              ></svg>
+            <div class="getstartedbtn">
+              <span class="gwd-span-10w8 getstartedbutton" id="GetStartedText"> 
                 GET STARTED!
-                </span>
+              </span>
             </div>
-
             <gwd-gesture
               id="GetStartedHover"
               class="gwd-gesture-1vpw"
             ></gwd-gesture>
+            </div> -->
+            
+         
+        </div>
+        <div class="MainButtons">
+          <div class="otsikko" id="GetStartedHolder">
             <div class="gwd-div-1dn6">
-              &nbsp;You prescribe exercises, students play games
+              &nbsp;You assign exercises,<br> students play games
             </div>
           </div>
-        </a>
+          <a href="https://www.lorugames.com/portal" class="teacherbtn"> Get Started <img src="assets/teachericon.svg" alt="" class="techericon"></a>
+          <a href="https://www.lorugames.com/games" class="playbtn"> PLAY ►</a>
 
-        <img
+        </div>
+        <div  id="image">
+
+          <img
           src="assets/oikAla.png"
-          class="gwd-img-1g7i gwd-gen-14jzgwdanimation"
+          class="oikeaala gwd-gen-14jzgwdanimation" id="TopSlider"
+          
         />
         <img
           src="assets/vasenAla.png"
-          class="gwd-img-lb16 gwd-gen-17gigwdanimation"
+          class="vasenala gwd-gen-17gigwdanimation"
         />
         <img
           src="assets/vasenAlaPuu.png"
-          class="gwd-img-onkr gwd-gen-njmvgwdanimation"
+          class="getstarted gwd-gen-njmvgwdanimation"
         />
         <img
           src="assets/oikeaAlaPuu.png"
@@ -201,6 +216,8 @@
           src="assets/Lorugames-logo-final-versio2 (1) (2).svg"
           class="gwd-img-y4by"
         />
+        </div>
+        
       </div>
     </div>
 
@@ -256,7 +273,7 @@
     <div class="trygames">
 
         <div id="closed"></div>
-        <a href="#popup" class="popup-link">Try Our Games!</a>
+        <a href="#popup" class="popup-link">Try Games Now!</a>
         <div class="popup-wrapper" id="popup">
         <div class="popup-container">
         <center>
@@ -268,9 +285,38 @@
     </div>
 
     <div class="maincontentrow">
+      <!-- <svg data-gwd-shape="rectangle"  data-gwd-tl-hidden=""></svg> -->
+
+      <div class="mainblock" id="vasenIngressi">
+        <div class="maintext">
+          <br />
+          <span> 1. Sign up and create your first question set or choose an existing one.</span> <br /><br />
+        
+          <br />
+        </div>
+      
+      </div>
+
+      <div class="mainblock" id="vasenIngressi">
+        <div class="maintext">
+          <br />
+          <span>2. Create a class and invite your students</span><br /><br />
+          <br />
+        </div>
+      </div>
+      <div class="mainblock" id="vasenIngressi">
+        <div class="maintext">
+          <br />
+  
+          <span>3. Let students start playing and track their learning!</span><br />
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="">
       <div class="maincontent">
-        <h1>Getting started is easy, <br> takes only 5 minutes:</h1>
-        <div class="maintextholder"> 
+        <!-- <h1>Getting started is easy, <br> takes only 5 minutes:</h1> -->
+        <!-- <div class="maintextholder"> 
           <div class="maintext">
             <br />
             <span> 1. Sign up and create your first question set or choose an existing one.</span> <br /><br />
@@ -279,7 +325,7 @@
             <br />
           </div>
 
-        </div>
+        </div> -->
        
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfFBH7pqTMh5AUGQorJ12zOsQt24kx0_tFzjQTjH4idyW2zFQ/viewform?usp=send_form"
@@ -366,8 +412,23 @@
     }) 
   });
       
-    
       </script>
+
+<!-- <script>
+    $(document).ready(function(){
+
+        data = document.querySelector("#TopSlider");
+
+  data.addEventListener("mousemove", (e) => {
+  data.style.backgroundPositionX = -e.offsetX + "px";
+  data.style.backgroundPositionY = -e.offsetY + "px";
+  data.style.top = -e.offsetY+700 + "px";
+ console.log(e.offsetX);
+});
+    })
+</script> -->
+
+
 
   </body>
 
