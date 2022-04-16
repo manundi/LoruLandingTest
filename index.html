@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script src="./localizer.js" type="text/javascript"></script>
+
     <meta charset="utf-8" />
     <title>Loru Games</title>
     <meta name="Loru Games" content="Loru Games Learning Games" />
@@ -147,8 +150,13 @@
 
   <body class="htmlNoPages">
     <div class="topnav">
-      <a class="active" href="https://www.lorugames.com/games" target="_parent">Play</a>
-      <a href="https://www.lorugames.com/games" target="_parent">Sign in</a>
+      <a class="active" href="https://www.lorugames.com/games" target="_parent"> 
+        <localized-text key="play"></localized-text>
+        <!-- <span lang="en">Play</span> 
+        <span lang="fi">Pelaa</span>  -->
+      
+      </a>
+      <a href="https://www.lorugames.com/games" target="_parent"><localized-text key="sign_in"></localized-text></a>
       <!-- <a href="https://www.lorugames.com/games">About</a> -->
     </div>
 
@@ -182,11 +190,11 @@
         <div class="MainButtons">
           <div class="otsikko" id="GetStartedHolder">
             <div class="gwd-div-1dn6">
-              &nbsp;You assign exercises,<br> students play games
+              &nbsp;<localized-text key="you_assign"></localized-text><br> <localized-text key="students_play"></localized-text>
             </div>
           </div>
-          <a href="https://www.lorugames.com/portal" class="teacherbtn"> Get Started <img src="assets/teachericon.svg" alt="" class="techericon"></a>
-          <a href="https://www.lorugames.com/games" class="playbtn"> PLAY ►</a>
+          <a href="https://www.lorugames.com/portal" class="teacherbtn"><localized-text key="get_started"></localized-text> <img src="assets/teachericon.svg" alt="" class="techericon"></a>
+          <a href="https://www.lorugames.com/games" class="playbtn"> <localized-text key="play"> ►</a>
 
         </div>
         <div  id="image">
@@ -230,10 +238,10 @@
         <span>
           <span class="ingressitekstit">
             <br />
-            It's free
+            <localized-text key="Its_free"></localized-text>
           </span>
           <br />
-          <span class="selitetekstit">Learning reports as a paid feature.</span>
+          <span class="selitetekstit"> <localized-text key="reports_as_paid"></localized-text></span>
         </span>
       </div>
 
@@ -243,14 +251,13 @@
         <span class="ingressitekstit">
           <span>
             <br />
-            From Teachers <br />
-            to Teachers </span
+            <localized-text key="from_teachers"></localized-text><br />
+            <localized-text key="to_teachers"></localized-text> </span
           >!
         </span>
         <br />
-        <span class="selitetekstit"
-          >Adaptive learning, teacher created question sets and many more
-          features designed by teachers.</span
+        <span class="selitetekstit">
+          <localized-text key="adaptive_learning"></localized-text></span
         >
       </div>
       <div class="block" id="vasenIngressi">
@@ -259,13 +266,13 @@
         <span class="ingressitekstit">
           <span>
             <br />
-            COPPA, FERPA and <br />
-            GPDR compliant. 
+            <localized-text key="coppa_ferpa"></localized-text> <br />
+            <localized-text key="gpdr"></localized-text>
           </span>
         </span>
         <br />
-        <span class="selitetekstit"
-          >Safe to use for schools around the world. <a href="https://loruplay.storage.googleapis.com/pdf/en-US_PrivacyPolicy.pdf"> Read more...</a></span
+        <span class="selitetekstit">
+          <localized-text key="safe_to_use"></localized-text> <a href="https://loruplay.storage.googleapis.com/pdf/en-US_PrivacyPolicy.pdf"> <localized-text key="read_more"></localized-text></a></span
         >
       </div>
     </div>
@@ -273,7 +280,7 @@
     <div class="trygames">
 
         <div id="closed"></div>
-        <a href="#popup" class="popup-link">Try Games Now!</a>
+        <a href="#popup" class="popup-link"> <localized-text key="try_games"></localized-text></a>
         <div class="popup-wrapper" id="popup">
         <div class="popup-container">
         <center>
@@ -290,7 +297,7 @@
       <div class="mainblock" id="vasenIngressi">
         <div class="maintext">
           <br />
-          <span> 1. Sign up and create your first question set or choose an existing one.</span> <br /><br />
+          <span> <h3>1.</h3>  <br> <localized-text key="sign_up_and_create"></localized-text></span> <br /><br />
         
           <br />
         </div>
@@ -300,7 +307,7 @@
       <div class="mainblock" id="vasenIngressi">
         <div class="maintext">
           <br />
-          <span>2. Create a class and invite your students</span><br /><br />
+          <span> <h3>2.</h3> <br> <localized-text key="students_answer"></localized-text></span><br /><br />
           <br />
         </div>
       </div>
@@ -308,7 +315,7 @@
         <div class="maintext">
           <br />
   
-          <span>3. Let students start playing and track their learning!</span><br />
+          <span> <h3>3.</h3><br> <localized-text key="monitor_learning"></localized-text></span><br />
           <br />
         </div>
       </div>
@@ -332,7 +339,7 @@
         >
           <div class="ambassadorlink">
             <span>
-              Join the Global Loru Games Ambassador Program!</span
+              <localized-text key="join_ambassador"></localized-text></span
             >
           </div>
         </a>
@@ -351,7 +358,7 @@
 
 
     <div class="footer">
-      <h1 style="color: white">Power of games in learning</h1>
+      <h1 style="color: white"><localized-text key="power_of_games"></localized-text></h1>
       <img
         src="assets/Lorugames-logo-final-versio2 (1) (2).svg"
         style="height: 40%"
@@ -390,8 +397,8 @@
 
     <div class="cookie-banner">
       <p>
-        We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
-          <a href="https://loruplay.storage.googleapis.com/pdf/en-US_PrivacyPolicy.pdf">cookie policy</a>
+        <localized-text key="we_use_cookies"></localized-text>
+          <a href="https://loruplay.storage.googleapis.com/pdf/en-US_PrivacyPolicy.pdf"><localized-text key="cookie_policy"></localized-text></a>
         </p>
       <button class="close">&times;</button>
     </div>
@@ -412,7 +419,11 @@
     }) 
   });
       
+
+  
       </script>
+
+    
 
 <!-- <script>
     $(document).ready(function(){

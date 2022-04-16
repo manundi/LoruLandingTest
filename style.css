@@ -1,4 +1,5 @@
 
+  
   p {
     margin: 0px;
     z-index: 1;
@@ -16,7 +17,11 @@
     margin: 0px;
   }
   h3 {
-    margin: 0px;
+   margin: -1vw;
+    font-family: "Fredoka One";
+    font-weight: normal;
+    font-size: xxx-large;
+    color: #f0f0f0;
   }
   a {
     color: #00bebc;
