@@ -250,6 +250,20 @@ body {
   height: 100%;
   width: 100%;
 }
+#herocontainer {
+  /* border: 1px solid red; */
+  height: 200vh;
+  width: 100%;
+}
+
+#animated {
+  /* width: 100px;
+  height: 100px;
+  position: fixed; */
+  /* opacity: 0; */
+  /* background: rgb(0, 0, 0); */
+}
+
 /* oikeaala */
 .oikeaala {
   position: absolute;

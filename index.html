@@ -197,7 +197,7 @@
           <a href="https://www.lorugames.com/games" class="playbtn"> <localized-text key="play"> ►</a>
 
         </div>
-        <div  id="image">
+        <div  id="herocontainer" class="herocontrainer">
 
           <img
           src="assets/oikAla.png"
@@ -209,12 +209,14 @@
           class="vasenala gwd-gen-17gigwdanimation"
         />
         <img
+          id="animated"
           src="assets/vasenAlaPuu.png"
           class="getstarted gwd-gen-njmvgwdanimation"
         />
         <img
+          id="animated2"
           src="assets/oikeaAlaPuu.png"
-          class="gwd-img-1rky gwd-gen-ss2xgwdanimation"
+          class="gwd-img-1rky gwd-gen-ss2xgwdanimation "
         />
         <img
           src="assets/yla.png"
@@ -423,7 +425,28 @@
   
       </script>
 
-    
+    <script>
+var locked = false;
+var container = document.getElementById('herocontainer');
+var animated = document.getElementById('animated');
+var animated2 = document.getElementById('animated2');
+let animationSpeed = 0.1;
+
+window.addEventListener('scroll', function() {
+  if (!locked) {
+    window.requestAnimationFrame(function() {
+
+      // animated.style.opacity = Math.min(window.scrollY / window.innerHeight, 1);
+      animated.style.bottom = Math.min(animationSpeed* window.scrollY / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+      animated2.style.bottom = Math.min(animationSpeed* window.scrollY / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+
+      locked = false; 
+    });
+  }
+  locked = true;
+});
+
+    </script>
 
 <!-- <script>
     $(document).ready(function(){
