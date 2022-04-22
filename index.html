@@ -150,13 +150,13 @@
 
   <body class="htmlNoPages">
     <div class="topnav">
-      <a class="active" href="https://www.lorugames.com/games" target="_parent"> 
+      <a class="active" href="https://www.lorugames.com/games" target="_self"> 
         <localized-text key="play"></localized-text>
         <!-- <span lang="en">Play</span> 
         <span lang="fi">Pelaa</span>  -->
       
       </a>
-      <a href="https://www.lorugames.com/games" target="_parent"><localized-text key="sign_in"></localized-text></a>
+      <a href="https://www.lorugames.com/games" target="_self"><localized-text key="sign_in"></localized-text></a>
       <!-- <a href="https://www.lorugames.com/games">About</a> -->
     </div>
 
@@ -200,29 +200,33 @@
         <div  id="herocontainer" class="herocontrainer">
 
           <img
+          id="animated"
           src="assets/oikAla.png"
-          class="oikeaala gwd-gen-14jzgwdanimation" id="TopSlider"
+          class="oikeaala"
           
         />
         <img
+          id="animated2"
           src="assets/vasenAla.png"
-          class="vasenala gwd-gen-17gigwdanimation"
+          class="vasenala"
         />
         <img
-          id="animated"
+          id="animated3"
           src="assets/vasenAlaPuu.png"
           class="getstarted gwd-gen-njmvgwdanimation"
         />
         <img
-          id="animated2"
+          id="animated4"
           src="assets/oikeaAlaPuu.png"
           class="gwd-img-1rky gwd-gen-ss2xgwdanimation "
         />
         <img
+          id="animated5"
           src="assets/yla.png"
-          class="gwd-img-1tj2 gwd-gen-eypogwdanimation"
+          class="ylaoksat gwd-gen-eypogwdanimation"
         />
-        <img
+
+        <img      
           src="assets/Lorugames-logo-final-versio2 (1) (2).svg"
           class="gwd-img-y4by"
         />
@@ -426,25 +430,53 @@
       </script>
 
     <script>
-var locked = false;
+var locked = true;
 var container = document.getElementById('herocontainer');
 var animated = document.getElementById('animated');
 var animated2 = document.getElementById('animated2');
-let animationSpeed = 0.1;
+var animated3 = document.getElementById('animated3');
+var animated4 = document.getElementById('animated4');
+var animated5 = document.getElementById('animated5');
+let animationSpeed = 0.02;
 
-window.addEventListener('scroll', function() {
-  if (!locked) {
-    window.requestAnimationFrame(function() {
+const lock = document.querySelector('.gwd-gen-eypogwdanimation');
 
-      // animated.style.opacity = Math.min(window.scrollY / window.innerHeight, 1);
-      animated.style.bottom = Math.min(animationSpeed* window.scrollY / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
-      animated2.style.bottom = Math.min(animationSpeed* window.scrollY / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+lock.onanimationend = () => {
+  locked = false;
+  console.log('Animation ended');
+};
 
-      locked = false; 
-    });
+
+
+window.addEventListener("mousemove", (e) => {
+  if(!locked){
+    animated.style.bottom = Math.min(animationSpeed* e.y / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+    animated2.style.bottom = Math.min(animationSpeed* e.y / window.innerHeight * container.clientWidth, container.clientWidth - animated2.clientWidth).toString() + 'px';
+    animated3.style.bottom = Math.min(0.1* e.y / window.innerHeight * container.clientWidth, container.clientWidth - animated3.clientWidth).toString() + 'px';
+    animated4.style.bottom = Math.min(0.1* e.y / window.innerHeight * container.clientWidth, container.clientWidth - animated4.clientWidth).toString() + 'px';
+    animated5.style.top = Math.min( -0.03* e.y / window.innerHeight * container.clientWidth, container.clientWidth - animated5.clientWidth).toString() + 'px';
+  // window.style.backgroundPositionX = -e.offsetX + "px";
+  // window.style.backgroundPositionY = -e.offsetY + "px";
+  // data.style.top = -e.offsetY+700 + "px";
+  //console.log(e.offsetY);
+
+
   }
-  locked = true;
+ 
 });
+
+// window.addEventListener('scroll', function() {
+//   if (!locked) {
+//     window.requestAnimationFrame(function() {
+//       // animated.style.opacity = Math.min(window.scrollY / window.innerHeight, 1);
+//       animated.style.bottom = Math.min(animationSpeed* window.mousep / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+//       animated2.style.bottom = Math.min(animationSpeed* window.scrollY / window.innerHeight * container.clientWidth, container.clientWidth - animated.clientWidth).toString() + 'px';
+
+//       locked = false; 
+//     });
+//   }
+//   locked = true;
+// });
 
     </script>
 

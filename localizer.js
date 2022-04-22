@@ -5,7 +5,7 @@ var dictionary = {
     "en": {
         "play": "PLAY",
         "sign_in": "Sign in",
-        "you_assign": "You assign exercises,",
+        "you_assign": "Teacher assigns exercises,",
         "students_play": "students play games",
         "get_started": "Get Started",
         "Its_free": "It's free",

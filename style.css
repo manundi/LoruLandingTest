@@ -267,29 +267,31 @@ body {
 /* oikeaala */
 .oikeaala {
   position: absolute;
-  transform-origin: 50% 50% 0px;
-  top: 60%;
+  transform-origin: 50% 0% 0px;
+  bottom:5vw;
+  /* top: 60%; */
   display: block;
   right: 0%;
   transform-style: preserve-3d;
   width: 80%;
-  transform: translate3d(0px, 278px, 0px);
+  /* transform: translate3d(0px, 278px, 0px); */
 }
 /* vasenala */
 .vasenala {
   position: absolute;
-  transform-origin: 50% 50% 0px;
+  /* transform-origin: 50% 0% 0px; */
   display: block;
   left: 0px;
-  top: 65%;
+  bottom:5vw;
+  /* top: 65%; */
   transform-style: preserve-3d;
   width: 65%;
-  transform: translate3d(0px, 287px, 0px);
+  /* transform: translate3d(0px, 287px, 0px); */
 }
-.gwd-img-1tj2 {
+.ylaoksat {
   position: absolute;
-  transform-origin: 50% 50% 0px;
-  top: 0%;
+  /* transform-origin: 50% 50% 0px; */
+  /* top: -10px; */
   width: 100%;
   left: 0px;
   transform-style: preserve-3d;
@@ -553,7 +555,7 @@ a.popup-close {
 }
 @keyframes gwd-gen-17gigwdanimation_gwd-keyframes {
   0% {
-    transform: translate3d(0px, 287px, 0px);
+    transform: translate3d(0px, 487px, 0px);
     animation-timing-function: linear;
   }
   100% {
