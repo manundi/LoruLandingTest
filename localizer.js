@@ -1,6 +1,27 @@
 var dictionary = {
     "_": { // when language is not supported
-        "hello_world": "Not Translated!"
+        "play": "PLAY",
+        "sign_in": "Sign in",
+        "you_assign": "Teacher assigns exercises,",
+        "students_play": "students play games",
+        "get_started": "Get Started",
+        "Its_free": "It's free",
+        "reports_as_paid": "Learning reports as a paid feature.",
+        "from_teachers": "From Teachers",
+        "to_teachers": "to Teachers",
+        "adaptive_learning": "Adaptive learning, teacher created question sets and many more features designed by teachers.",
+        "coppa_ferpa": "COPPA, FERPA and",
+        "gpdr": "GPDR compliant. ",
+        "safe_to_use": "Safe to use for schools around the world.",
+        "read_more": "Read more...",
+        "try_games": "Try Games Now!",
+        "sign_up_and_create": "Sign up and create or select questions.",
+        "students_answer": "Students answer the questions in fun games",
+        "monitor_learning": "Monitor their  learning!",
+        "join_ambassador": "Join the Global Loru Games Ambassador Program!",
+        "power_of_games": "Power of games in learning",
+        "we_use_cookies": "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.",
+        "cookie_policy": "cookie policy",
     },
     "en": {
         "play": "PLAY",

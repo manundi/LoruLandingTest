@@ -17,7 +17,7 @@
     margin: 0px;
   }
   h3 {
-   margin: -1vw;
+
     font-family: "Fredoka One";
     font-weight: normal;
     font-size: xxx-large;
@@ -55,9 +55,9 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 12px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 2vw;
   font-family: "Fredoka One";
 }
 
@@ -73,11 +73,7 @@ body {
   color: white;
 }
 
-.slider {
-  height: 80%;
-  width: 100%;
-  z-index: -1;
-}
+
 
 .row {
   width: 100%;
@@ -85,21 +81,20 @@ body {
   text-align: center;
   z-index: 1;
   position: relative;
-  margin-top: -2%;
-  margin-bottom: -8%;
+  margin-top: -15vw;
+ 
 }
 
 .block {
   display: inline-block;
-  width: 430px;
+  width: 505px;
   margin-left: -1%;
-  height: 10%;
+  height: 40%;
   text-align: center;
   margin-top: -5%;
   margin-bottom: 9%;
   vertical-align: top;
 }
-
 
 .ingressitekstit {
   margin-top: -10%;
@@ -108,7 +103,6 @@ body {
   font-weight: normal;
   font-size: 30px;
   position: relative;
-
   text-align: center;
   color: #00bebc;
 }
@@ -138,6 +132,31 @@ body {
   
 }
 
+@media only screen and (max-width: 600px) {
+
+  .block{
+    width: 100vw;
+   display: block !important;
+   }
+   .ingressitekstit {
+    margin-top: -10%;
+    text-align: center;
+    font-size: 30px;
+   }
+   .selitetekstit {
+    font-size: 20px;
+   }
+
+  .taustakivet {
+
+    }
+  .etuikoni {
+    width: 70%;
+    height: 70%;
+      }
+     
+}
+
 .maincontentrow {
   z-index: 3;
   margin-top: 50px;
@@ -145,34 +164,55 @@ body {
   height: auto;
   background-color: white;
   text-align: center;
-  z-index: 1;
-  position: relative;
   background-color:#00bebc;
+  
 }
 .mainblock {
   display: inline-block;
-  width: 430px;
+
   text-align: center;
   vertical-align: top;
-  padding: 20px;
+ 
 }
 
 .maincontent {
-  width: 90%;
+ 
+  width: 100%;
   text-align: center;
   vertical-align: top;
   margin: auto;
 }
 .maintext {
+  
+  position: relative;
   padding-bottom: 2%;
   padding-top: 2%;
-  width: 100%;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
   font-size: 3vh;
   color: rgb(234, 243, 243);
   font-family: "Fredoka One";
+}
+@media only screen and (max-width: 600px) {
+  .maincontentrow {
+
+  }
+  .mainblock {
+    width: 100% !important;
+    text-align: center;
+  }
   
+  .maincontent {
+  
+  }
+  .maintext {
+   
+  }
 
 }
+
+
 .bottomrow{
   margin: auto;
   text-align: center;
@@ -203,17 +243,44 @@ body {
   padding-top: 50px;
   display: inline-block;
   background-color: #cdc5efff;
-  width: 100%;
-  height: 50%;
+
+  height: 20vw;
   text-align: center;
   padding-bottom: 5vw;
+  margin-bottom: 10%;
+  margin-top: 3%;
+  font-size: 4vh;
+
+  width: 100%;
+  margin: auto;
+  font-family: "Fredoka One";
+
 }
 .someicons{
-  height: 100px;
+  height: 30px;
   margin: 13px;
   
   
 }
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding-top: 50px;
+    display: inline-block;
+    background-color: #cdc5efff;
+    width: 100%;
+    height: 50vw;
+    text-align: center;
+    padding-bottom: 5vw;
+  }
+  .someicons{
+    height: 20px;
+    margin: 13px;
+    
+    
+  }
+
+}
+
 
 .cookie-banner {
   position: fixed;
@@ -242,8 +309,52 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .cookie-banner {
+    position: fixed;
+    z-index: 10;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+  
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    
+  }
+  .close {
+    height: 20px;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}
 
-.gwd-div-2b06 {
+
+.slider {
+  height: 58vw;
+  width: 100%;
+  z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  .slider {
+    height: 108vw;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+
+.topHero {
   position: absolute;
   background-image: none;
   background-color: rgb(0, 190, 188);
@@ -252,7 +363,7 @@ body {
 }
 #herocontainer {
   /* border: 1px solid red; */
-  height: 200vh;
+ 
   width: 100%;
 }
 
@@ -268,7 +379,7 @@ body {
 .oikeaala {
   position: absolute;
   transform-origin: 50% 0% 0px;
-  bottom:5vw;
+  bottom:3vw;
   /* top: 60%; */
   display: block;
   right: 0%;
@@ -282,7 +393,7 @@ body {
   /* transform-origin: 50% 0% 0px; */
   display: block;
   left: 0px;
-  bottom:5vw;
+  bottom:3vw;
   /* top: 65%; */
   transform-style: preserve-3d;
   width: 65%;
@@ -314,9 +425,18 @@ body {
   transform-style: preserve-3d;
   transform: translate3d(0px, 400px, 0px);
 }
+
+.MainButtons{
+  top: 9.5vw;
+  z-index: 2;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-position: center;
+}
 /* otsikko ja nappi alue */
 .otsikko {
-
 
   left: 50%;
   
@@ -328,21 +448,12 @@ body {
 .gwd-div-1dn6 {
   position: relative;
   text-align: center;
-  font-size: 400%;
+  font-size: 4.5vw;
   width: 70vw;
   color: rgb(234, 243, 243);
   font-family: "Fredoka One";
 }
 
-.MainButtons{
-  top: 25%;
-  z-index: 2;
-  margin: auto;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-position: center;
-}
 
 .teacherbtn {
   z-index: 2;
@@ -350,6 +461,7 @@ body {
   text-align: center;
   margin: 22px auto;
   width: 24vw;
+
   color: rgb(0, 0, 0);
   text-decoration: none;
   background-color: #cdc5efff;
@@ -357,7 +469,7 @@ body {
   box-shadow: 5px 5px 0 0 rgb(135, 130, 158);
   display: block;
   font-family: "Fredoka One";
-  font-size: xx-large;
+  font-size: 2.5vw;
 }
 .teacherbtn:hover {
   background-color: rgb(135, 130, 158);
@@ -388,7 +500,7 @@ body {
   box-shadow: 5px 5px 0 0 rgb(135, 130, 158);
   display: block;
   font-family: "Fredoka One";
-  font-size: xx-large;
+  font-size: 2.5vw;
 }
 .playbtn:hover {
   background-color: rgb(96, 122, 64);
@@ -396,6 +508,40 @@ body {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 0.5s;
+}
+@media only screen and (max-width: 600px) {
+
+  .gwd-div-1dn6 {
+    position: relative;
+    text-align: center;
+    font-size: x-large;
+    width: 70vw;
+    color: rgb(234, 243, 243);
+    font-family: "Fredoka One";
+  }
+
+  .teacherbtn {
+    
+    margin: 22px auto;
+    width: 24vw;
+  
+    font-size: 3.5vw;
+  }
+  .playbtn {
+  
+    margin: auto;
+    width: 24vw;
+  
+    font-size: 3.5vw;
+  }
+
+  .techericon{
+    height: 5vw;
+    margin: auto;
+    position: relative;
+    top: 0.5vw;
+  
+  }
 }
 
 
@@ -440,8 +586,10 @@ a.popup-link {
   padding: 17px 0;
   text-align: center;
   margin: 0% auto;
+  margin-top: 50px;
+  margin-bottom: 90px;
   position: relative;
-  width: 420px;
+  width: 55vw;
   color: #fff;
   text-decoration: none;
   background-color: #cdc5efff;
@@ -463,6 +611,7 @@ a.popup-link:hover {
   visibility: hidden;
   opacity: 0;
   margin-top: -50px;
+
 }
 #popup:target {
   visibility: visible;
@@ -479,12 +628,12 @@ a.popup-link:hover {
   -moz-transition: all 1s;
   transition: all 1s;
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .popup-container {
     width: 70%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .popup-container {
     width: 100%;
   }
